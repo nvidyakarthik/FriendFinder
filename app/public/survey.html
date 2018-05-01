@@ -14,20 +14,40 @@
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
+  <!-- customized fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Carter+One|Eczar" rel="stylesheet">
+
   <!-- Chosen -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+  <style>
+      .jumbotron h1{
+        font-family: 'Carter One', cursive;
+  
+      }
+      body {
+        
+        font-family: 'Eczar', serif;
+      }
+      .container{
+        background-color: #f1f1f1;
+      }
+
+      
+    </style>
 
 </head>
 
 <body>
 
   <div class="container">
-
-    <h2>Survey Questions</h2>
+    <div class="clearfix">
+    <h2 class="pull-left">Survey Questions</h2>
+    <h2 class="pull-right"><a href="/"><i class="fa fa-home"></i></a></h2>
+    </div>
     <hr>
 
-    <h3><strong>About You</strong></h3>
+    <h3><strong >About You</strong></h3>
     <h4>Name (Required)</h4>
     <input type="text" id="name" class="form-control" required>
 
@@ -161,7 +181,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/nvidyakarthik/friendfinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -232,7 +252,7 @@
         });
         return isValid;
       }
-
+      
       // If all required fields are filled
       if (validateForm()) {
         // Create an object for the user"s data
@@ -252,7 +272,7 @@
             $("#q10").val()
           ]
         };
-
+        
         // AJAX post the data to the friends API.
         $.post("/api/friends", userData, function(data) {
 

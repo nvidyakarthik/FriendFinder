@@ -19,7 +19,6 @@ module.exports = function (app) {
         console.log(req.body);
         console.log(friendsList);
        // req.body.scores=req.body.scores.map(Number);
-        friendsList.push(req.body);
         var currentUser=req.body.scores;
         var totalDifference=0;
         var totalDiffArray=[];
@@ -32,7 +31,8 @@ module.exports = function (app) {
         });
 
         var matchIndex=indexOfSmallest(totalDiffArray);
-        console.log(totalDiffArray);      
+        console.log(totalDiffArray); 
+        friendsList.push(req.body);     
         res.json(friendsList[matchIndex]);  
         
         

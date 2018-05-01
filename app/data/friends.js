@@ -1,10 +1,3 @@
-// ===============================================================================
-// DATA
-// Below data will hold all of the reserved tables.
-// Initially we just set it equal to a "dummy" data.
-// But you could have it be an empty array as well.
-// ===============================================================================
-
 var friends = 
   [
     {
@@ -104,38 +97,6 @@ var friends =
     ]
     },
     {
-    "name": "fofofof",
-    "photo": "https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/",
-    "scores": [
-    "1",
-    "1",
-    "1",
-    "1",
-    "3",
-    "2",
-    "3",
-    "3",
-    "3",
-    "3"
-    ]
-    },
-    {
-    "name": "fofofof",
-    "photo": "https://www.pexels.com/photo/grey-and-white-short-fur-cat-104827/",
-    "scores": [
-    "1",
-    "1",
-    "1",
-    "1",
-    "3",
-    "2",
-    "3",
-    "3",
-    "3",
-    "3"
-    ]
-    },
-    {
     "name": "Crystal",
     "photo": "https://placeimg.com/640/480/any",
     "scores": [
@@ -183,38 +144,7 @@ var friends =
     "1"
     ]
     },
-    {
-    "name": "xzczDc",
-    "photo": "sadfdsafdsaf",
-    "scores": [
-    "3",
-    "3",
-    "3",
-    "3",
-    "3",
-    "4",
-    "3",
-    "5",
-    "4",
-    "2"
-    ]
-    },
-    {
-    "name": "asdf",
-    "photo": "asdf",
-    "scores": [
-    "2",
-    "3",
-    "2",
-    "2",
-    "1",
-    "4",
-    "1",
-    "2",
-    "2",
-    "1"
-    ]
-    },
+   
     {
     "name": "Tim",
     "photo": "aisudhfjasjidf",
